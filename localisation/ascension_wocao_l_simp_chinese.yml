@@ -1,0 +1,9 @@
+﻿l_simp_chinese:
+
+ requires_technology_lingfei:0"$TRIGGER_FAIL$需要 £society£§Y$tech_psionic_theory$§!/£society£§Y$tech_autonomous_agents$§!(格式塔)"
+ requires_technology_jifei:0"$TRIGGER_FAIL$需要 £engineering£§Y$tech_droid_workers$§!/£society£§Y$tech_autonomous_agents$§!(格式塔)"
+ requires_technology_jifei2:0"$TRIGGER_FAIL$需要£engineering£§Y$tech_synthetic_leaders$§!/£physics£§Y$tech_positronic_implants_machine_intelligence$§!(智械)/£physics£§Y$tech_positronic_implants$§!(蜂巢)"
+
+ bd_district_arcology_remember:0"纪念理想城"
+ bd_district_arcology_remember_plural:0"纪念理想城"
+ bd_district_arcology_remember_desc:0""

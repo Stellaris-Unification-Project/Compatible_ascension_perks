@@ -1,0 +1,53 @@
+@base_cost = 300
+@city_cost = 500
+bd_district_arcology_remember = {					#纪念理想城
+	base_buildtime = 600
+	is_capped_by_modifier = no
+	icon = district_arcology_leisure
+	show_on_uncolonized = {
+		uses_district_set = city_world
+		from = {
+			is_gestalt = yes
+			NOT = {
+				has_valid_civic = civic_machine_servitor
+			}
+		}
+	}
+
+	potential = {
+		uses_district_set = city_world
+		owner = {
+			exists = owner
+			is_gestalt = yes
+			NOT = {
+				has_valid_civic = civic_machine_servitor
+			}
+		}
+	}
+
+	conversion_ratio = 1
+	convert_to = {
+		district_arcology_leisure
+		district_city
+		district_nexus
+		district_hive
+		district_arcology_housing
+	}
+
+	resources = {
+		category = planet_districts
+		cost = {
+			minerals = 1000
+			exotic_gases = 50
+		}
+		upkeep = {
+			energy = 5
+			exotic_gases = 1
+		}
+	}
+
+	planet_modifier = {
+		planet_housing_add = 10
+		job_chronicle_drone_add = 6
+	}
+}

@@ -1,0 +1,5 @@
+on_terraforming_complete = {
+	events = {
+		bd_gaia.1
+	}
+}

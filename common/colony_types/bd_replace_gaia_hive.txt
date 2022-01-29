@@ -1,0 +1,481 @@
+col_industrial = {					#工业
+	icon = GFX_colony_type_industrial
+
+	potential = {
+		exists = owner
+		owner = { country_uses_consumer_goods = yes }
+		OR = {
+			is_planet_class = pc_gaia
+			NOR = {
+				uses_district_set = city_world
+				uses_district_set = ring_world
+				uses_district_set = habitat
+				uses_district_set = machine_world
+				uses_district_set = hive_world
+			}
+		}
+		is_special_colony_type = no
+	}
+
+	planet_modifier = {
+		planet_district_industrial_build_speed_mult = 0.25
+		planet_artisans_upkeep_mult = -0.10
+		planet_metallurgists_upkeep_mult = -0.10
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_galactic_community_member = yes
+			}
+			OR = {
+				is_active_resolution = "resolution_industry_environmental_ordinance_waivers"
+				is_active_resolution = "resolution_industry_project_cornucopia"
+			}
+		}
+		modifier = {
+			planet_artisans_produces_mult = 0.05
+			planet_metallurgists_produces_mult = 0.05
+		}
+	}
+
+	weight_modifier = {
+		modifier = {
+			add = 5
+			has_designation = col_industrial
+		}
+		modifier = {
+			add = 5
+			num_districts = { type = district_industrial value >= @built_districts_low_threshold }
+		}
+		modifier = {
+			add = 5
+			num_districts = { type = district_industrial value >= @built_districts_medium_threshold }
+		}
+		modifier = {
+			add = 10
+			AND = {
+				OR = {
+					has_building = building_factory_1
+					has_building = building_factory_2
+					has_building = building_factory_3
+				}
+				OR = {
+					has_building = building_foundry_1
+					has_building = building_foundry_2
+					has_building = building_foundry_3
+				}
+			}
+		}
+		modifier = {
+			factor = 0
+			num_districts = { type = district_industrial value = 0 }
+		}
+	}
+}
+
+# Forge Planet
+col_foundry = {						#铸造
+	icon = GFX_colony_type_foundry
+
+	potential = {
+		exists = owner
+		OR = {
+			is_planet_class = pc_gaia
+			NOR = {
+				uses_district_set = city_world
+				uses_district_set = ring_world
+				uses_district_set = habitat
+				uses_district_set = machine_world
+				uses_district_set = hive_world
+			}
+		}
+		is_special_colony_type = no
+	}
+
+	planet_modifier = {
+		custom_tooltip = col_foundry_custom
+		planet_district_industrial_build_speed_mult = 0.25
+		planet_metallurgists_upkeep_mult = -0.20
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_galactic_community_member = yes
+			}
+			OR = {
+				is_active_resolution = "resolution_industry_environmental_ordinance_waivers"
+				is_active_resolution = "resolution_industry_project_cornucopia"
+			}
+		}
+		modifier = {
+			planet_metallurgists_produces_mult = 0.05
+		}
+	}
+
+	weight_modifier = {
+		modifier = {
+			add = 5
+			owner = {
+				OR = {
+					country_uses_consumer_goods = no
+					has_monthly_income = { resource = consumer_goods value >= 0 }
+				}
+			}
+			OR = {
+				AND = {
+					owner = {
+						has_monthly_income = { resource = alloys value < 10 }
+						years_passed <= 20
+					}
+				}
+				AND = {
+					owner = {
+						has_monthly_income = { resource = alloys value < 20 }
+						years_passed > 20
+						years_passed < 50
+					}
+				}
+				AND = {
+					owner = {
+						has_monthly_income = { resource = alloys value < 40 }
+						years_passed > 50
+						years_passed < 75
+					}
+				}
+				AND = {
+					owner = {
+						has_monthly_income = { resource = alloys value < 60 }
+						years_passed > 75
+					}
+				}
+			}
+		}
+		modifier = {
+			add = 5
+			has_designation = col_foundry
+		}
+		modifier = {
+			add = 5
+			num_districts = { type = district_industrial value >= @built_districts_medium_threshold }
+		}
+		modifier = {
+			add = 5
+			has_building = building_foundry_1
+		}
+		modifier = {
+			add = 10
+			has_building = building_foundry_2
+		}
+		modifier = {
+			add = 10
+			has_building = building_foundry_3
+		}
+		modifier = {
+			factor = 0
+			num_districts = { type = district_industrial value = 0 }
+		}
+	}
+}
+
+# Factory Planet
+col_factory = {						#工厂
+	icon = GFX_colony_type_factory
+
+	potential = {
+		exists = owner
+		owner = { country_uses_consumer_goods = yes }
+		OR = {
+			is_planet_class = pc_gaia
+			NOR = {
+				uses_district_set = city_world
+				uses_district_set = ring_world
+				uses_district_set = habitat
+				uses_district_set = machine_world
+				uses_district_set = hive_world
+			}
+		}
+		is_special_colony_type = no
+	}
+
+	planet_modifier = {
+		custom_tooltip = col_factory_custom
+		planet_district_industrial_build_speed_mult = 0.25
+		planet_artisans_upkeep_mult = -0.20
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_galactic_community_member = yes
+			}
+			OR = {
+				is_active_resolution = "resolution_industry_environmental_ordinance_waivers"
+				is_active_resolution = "resolution_industry_project_cornucopia"
+			}
+		}
+		modifier = {
+			planet_artisans_produces_mult = 0.05
+		}
+	}
+
+	weight_modifier = {
+		modifier = {
+			add = 5
+			owner = { has_monthly_income = { resource = consumer_goods value < 5 } }
+			OR = {
+				AND = {
+					owner = {
+						has_monthly_income = { resource = alloys value > 20 }
+						years_passed <= 20
+					}
+				}
+				AND = {
+					owner = {
+						has_monthly_income = { resource = alloys value > 40 }
+						years_passed > 20
+						years_passed < 50
+					}
+				}
+				AND = {
+					owner = {
+						has_monthly_income = { resource = alloys value > 70 }
+						years_passed > 50
+						years_passed < 75
+					}
+				}
+				AND = {
+					owner = {
+						has_monthly_income = { resource = alloys value > 100 }
+						years_passed > 75
+					}
+				}
+			}
+		}
+		modifier = {
+			add = 5
+			has_designation = col_factory
+		}
+		modifier = {
+			add = 5
+			num_districts = { type = district_industrial value >= @built_districts_medium_threshold }
+		}
+		modifier = {
+			add = 5
+			has_building = building_factory_1
+		}
+		modifier = {
+			add = 10
+			has_building = building_factory_2
+		}
+		modifier = {
+			add = 10
+			has_building = building_factory_3
+		}
+		modifier = {
+			factor = 0
+			num_districts = { type = district_industrial value = 0 }
+		}
+	}
+}
+
+# Hive World				蜂巢世界
+col_hiv = {					#蜂巢星球
+	icon = GFX_colony_type_urban
+
+	potential = {
+		uses_district_set = hive_world
+		is_planet_class = pc_hive
+	}
+
+	planet_modifier = {
+		planet_district_mining_uncapped_build_speed_mult = 0.25
+		planet_district_farming_uncapped_build_speed_mult = 0.25
+		planet_district_generator_uncapped_build_speed_mult = 0.25
+		planet_jobs_simple_drone_produces_mult = 0.05
+	}
+
+	weight_modifier = {
+		base = 10
+	}
+}
+
+# Hive World Foundry
+col_hiv_foundry = {			#铸造型蜂巢星球
+	icon = GFX_colony_type_foundry
+
+	potential = {
+		uses_district_set = hive_world
+		is_planet_class = pc_hive
+	}
+
+	planet_modifier = {
+		planet_district_industrial_build_speed_mult = 0.25
+		planet_metallurgists_upkeep_mult = -0.20
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_galactic_community_member = yes
+			}
+			OR = {
+				is_active_resolution = "resolution_industry_environmental_ordinance_waivers"
+				is_active_resolution = "resolution_industry_project_cornucopia"
+			}
+		}
+		modifier = {
+			planet_metallurgists_produces_mult = 0.05
+		}
+	}
+
+	weight_modifier = {
+		base = 10
+		modifier = {
+			add = 5
+			owner = { has_monthly_income = { resource = alloys value < 100 } }
+		}
+		modifier = {
+			add = 5
+			has_designation = col_hiv_foundry
+		}
+		modifier = {
+			add = 2
+			has_building = building_foundry_1
+		}
+		modifier = {
+			add = 4
+			has_building = building_foundry_2
+		}
+		modifier = {
+			add = 5
+			num_districts = { type = district_industrial value >= @built_districts_medium_threshold }
+		}
+		modifier = {
+			factor = 0
+			NOT = { num_districts = { type = district_industrial value >= @built_districts_medium_threshold } }
+			num_buildings = { type = building_foundry_1 value = 0 }
+			num_buildings = { type = building_foundry_2 value = 0 }
+		}
+	}
+}
+
+# Fortress Planet
+col_fortress = {					#要塞
+	icon = GFX_colony_type_fortress
+
+	potential = {
+		exists = owner
+		OR = {
+			is_planet_class = pc_gaia
+			NOR = {
+				uses_district_set = city_world
+				uses_district_set = ring_world
+				uses_district_set = habitat
+				uses_district_set = machine_world
+				uses_district_set = hive_world
+			}
+		}
+		is_special_colony_type = no
+	}
+
+	planet_modifier = {
+		planet_building_stronghold_build_speed_mult = 0.25
+		planet_orbital_bombardment_damage = -0.10
+		army_defense_damage_mult = 0.20
+	}
+
+	weight_modifier = {
+		modifier = {
+			add = 5
+			has_designation = col_fortress
+		}
+		modifier = {
+			add = 3
+			num_buildings = { type = building_stronghold value >= 2 }
+		}
+		modifier = {
+			add = 4
+			num_buildings = { type = building_stronghold value >= 3 }
+		}
+		modifier = {
+			add = 5
+			num_buildings = { type = building_stronghold value >= 4 }
+		}
+		modifier = {
+			add = 3
+			num_buildings = { type = building_fortress value >= 1 }
+		}
+		modifier = {
+			add = 5
+			num_buildings = { type = building_fortress value >= 2 }
+		}
+	}
+}
+
+col_bureau = {				#官僚中心
+	icon = GFX_colony_type_bureaucratic
+
+	potential = {
+		exists = owner
+		owner = { is_regular_empire = yes }
+		OR = {
+			is_planet_class = pc_gaia
+			NOR = {
+				uses_district_set = hive_world
+				uses_district_set = habitat
+			}
+		}
+		is_special_colony_type = no
+	}
+
+	planet_modifier = {
+		custom_tooltip = col_bureaucracy_custom
+		planet_bureaucrats_upkeep_mult = -0.10
+		pop_ethics_shift_speed_mult = -0.20
+	}
+
+	weight_modifier = {
+		base = 10
+		modifier = {
+			add = 5
+			owner = { empire_sprawl_over_cap > 40 }
+		}
+		modifier = {
+			add = 5
+			has_designation = col_bureau
+		}
+		modifier = {
+			add = 3
+			num_buildings = { type = building_bureaucratic_1 value >= 2 }
+		}
+		modifier = {
+			add = 4
+			num_buildings = { type = building_bureaucratic_1 value >= 3 }
+		}
+		modifier = {
+			add = 5
+			num_buildings = { type = building_bureaucratic_1 value >= 4 }
+		}
+		modifier = {
+			add = 6
+			num_buildings = { type = building_bureaucratic_1 value >= 5 }
+		}
+		modifier = {
+			add = 5
+			num_buildings = { type = building_bureaucratic_2 value >= 1 }
+		}
+		modifier = {
+			add = 6
+			num_buildings = { type = building_bureaucratic_2 value >= 2 }
+		}
+		modifier = {
+			factor = 0
+			num_buildings = { type = building_bureaucratic_1 value = 0 }
+			num_buildings = { type = building_bureaucratic_2 value = 0 }
+		}
+	}
+}

@@ -1,0 +1,1411 @@
+@gaiaCost = 7500
+@gaiaTime = 3600
+
+
+
+
+
+terraform_link = {
+	to = pc_city
+	from = pc_retinal
+
+	resources = {
+		category = terraforming
+
+		cost = {
+			energy = @gaiaCost
+		}
+	}
+
+	duration = @gaiaTime
+
+	potential = {
+		has_ascension_perk = "ap_arcology_project"
+	}
+
+	ai_weight = {
+		weight = 1
+	}
+}
+
+terraform_link = {
+	to = pc_city
+	from = pc_cascadian
+
+	resources = {
+		category = terraforming
+
+		cost = {
+			energy = @gaiaCost
+		}
+	}
+
+	duration = @gaiaTime
+
+	potential = {
+		has_ascension_perk = "ap_arcology_project"
+	}
+
+	ai_weight = {
+		weight = 1
+	}
+}
+
+terraform_link = {
+	to = pc_city
+	from = pc_desertislands
+
+	resources = {
+		category = terraforming
+
+		cost = {
+			energy = @gaiaCost
+		}
+	}
+
+	duration = @gaiaTime
+
+	potential = {
+		has_ascension_perk = "ap_arcology_project"
+	}
+
+	ai_weight = {
+		weight = 1
+	}
+}
+
+terraform_link = {
+	to = pc_city
+	from = pc_sandsea
+
+	resources = {
+		category = terraforming
+
+		cost = {
+			energy = @gaiaCost
+		}
+	}
+
+	duration = @gaiaTime
+
+	potential = {
+		has_ascension_perk = "ap_arcology_project"
+	}
+
+	ai_weight = {
+		weight = 1
+	}
+}
+
+terraform_link = {
+	to = pc_city
+	from = pc_mesa
+
+	resources = {
+		category = terraforming
+
+		cost = {
+			energy = @gaiaCost
+		}
+	}
+
+	duration = @gaiaTime
+
+	potential = {
+		has_ascension_perk = "ap_arcology_project"
+	}
+
+	ai_weight = {
+		weight = 1
+	}
+}
+
+terraform_link = {
+	to = pc_city
+	from = pc_steppe
+
+	resources = {
+		category = terraforming
+
+		cost = {
+			energy = @gaiaCost
+		}
+	}
+
+	duration = @gaiaTime
+
+	potential = {
+		has_ascension_perk = "ap_arcology_project"
+	}
+
+	ai_weight = {
+		weight = 1
+	}
+}
+
+terraform_link = {
+	to = pc_city
+	from = pc_frozen_desert
+
+	resources = {
+		category = terraforming
+
+		cost = {
+			energy = @gaiaCost
+		}
+	}
+
+	duration = @gaiaTime
+
+	potential = {
+		has_ascension_perk = "ap_arcology_project"
+	}
+
+	ai_weight = {
+		weight = 1
+	}
+}
+
+terraform_link = {
+	to = pc_city
+	from = pc_highland
+
+	resources = {
+		category = terraforming
+
+		cost = {
+			energy = @gaiaCost
+		}
+	}
+
+	duration = @gaiaTime
+
+	potential = {
+		has_ascension_perk = "ap_arcology_project"
+	}
+
+	ai_weight = {
+		weight = 1
+	}
+}
+
+terraform_link = {
+	to = pc_city
+	from = pc_swamp
+
+	resources = {
+		category = terraforming
+
+		cost = {
+			energy = @gaiaCost
+		}
+	}
+
+	duration = @gaiaTime
+
+	potential = {
+		has_ascension_perk = "ap_arcology_project"
+	}
+
+	ai_weight = {
+		weight = 1
+	}
+}
+
+terraform_link = {
+	to = pc_city
+	from = pc_lake
+
+	resources = {
+		category = terraforming
+
+		cost = {
+			energy = @gaiaCost
+		}
+	}
+
+	duration = @gaiaTime
+
+	potential = {
+		has_ascension_perk = "ap_arcology_project"
+	}
+
+	ai_weight = {
+		weight = 1
+	}
+}
+
+terraform_link = {
+	to = pc_city
+	from = pc_wetswamp
+
+	resources = {
+		category = terraforming
+
+		cost = {
+			energy = @gaiaCost
+		}
+	}
+
+	duration = @gaiaTime
+
+	potential = {
+		has_ascension_perk = "ap_arcology_project"
+	}
+
+	ai_weight = {
+		weight = 1
+	}
+}
+
+terraform_link = {
+	to = pc_city
+	from = pc_mangrove
+
+	resources = {
+		category = terraforming
+
+		cost = {
+			energy = @gaiaCost
+		}
+	}
+
+	duration = @gaiaTime
+
+	potential = {
+		has_ascension_perk = "ap_arcology_project"
+	}
+
+	ai_weight = {
+		weight = 1
+	}
+}
+
+terraform_link = {
+	to = pc_city
+	from = pc_outback
+
+	resources = {
+		category = terraforming
+
+		cost = {
+			energy = @gaiaCost
+		}
+	}
+
+	duration = @gaiaTime
+
+	potential = {
+		has_ascension_perk = "ap_arcology_project"
+	}
+
+	ai_weight = {
+		weight = 1
+	}
+}
+
+terraform_link = {
+	to = pc_city
+	from = pc_hadesert
+
+	resources = {
+		category = terraforming
+
+		cost = {
+			energy = @gaiaCost
+		}
+	}
+
+	duration = @gaiaTime
+
+	potential = {
+		has_ascension_perk = "ap_arcology_project"
+	}
+
+	ai_weight = {
+		weight = 1
+	}
+}
+
+terraform_link = {
+	to = pc_city
+	from = pc_prairie
+
+	resources = {
+		category = terraforming
+
+		cost = {
+			energy = @gaiaCost
+		}
+	}
+
+	duration = @gaiaTime
+
+	potential = {
+		has_ascension_perk = "ap_arcology_project"
+	}
+
+	ai_weight = {
+		weight = 1
+	}
+}
+
+terraform_link = {
+	to = pc_city
+	from = pc_glacial
+
+	resources = {
+		category = terraforming
+
+		cost = {
+			energy = @gaiaCost
+		}
+	}
+
+	duration = @gaiaTime
+
+	potential = {
+		has_ascension_perk = "ap_arcology_project"
+	}
+
+	ai_weight = {
+		weight = 1
+	}
+}
+
+terraform_link = {
+	to = pc_city
+	from = pc_boreal
+
+	resources = {
+		category = terraforming
+
+		cost = {
+			energy = @gaiaCost
+		}
+	}
+
+	duration = @gaiaTime
+
+	potential = {
+		has_ascension_perk = "ap_arcology_project"
+	}
+
+	ai_weight = {
+		weight = 1
+	}
+}
+
+terraform_link = {
+	to = pc_city
+	from = pc_mushroom
+
+	resources = {
+		category = terraforming
+
+		cost = {
+			energy = @gaiaCost
+		}
+	}
+
+	duration = @gaiaTime
+
+	potential = {
+		has_ascension_perk = "ap_arcology_project"
+	}
+
+	ai_weight = {
+		weight = 1
+	}
+}
+
+terraform_link = {
+	to = pc_city
+	from = pc_forest
+
+	resources = {
+		category = terraforming
+
+		cost = {
+			energy = @gaiaCost
+		}
+	}
+
+	duration = @gaiaTime
+
+	potential = {
+		has_ascension_perk = "ap_arcology_project"
+	}
+
+	ai_weight = {
+		weight = 1
+	}
+}
+
+terraform_link = {
+	to = pc_city
+	from = pc_subarctic
+
+	resources = {
+		category = terraforming
+
+		cost = {
+			energy = @gaiaCost
+		}
+	}
+
+	duration = @gaiaTime
+
+	potential = {
+		has_ascension_perk = "ap_arcology_project"
+	}
+
+	ai_weight = {
+		weight = 1
+	}
+}
+
+terraform_link = {
+	to = pc_city
+	from = pc_hajungle
+
+	resources = {
+		category = terraforming
+
+		cost = {
+			energy = @gaiaCost
+		}
+	}
+
+	duration = @gaiaTime
+
+	potential = {
+		has_ascension_perk = "ap_arcology_project"
+	}
+
+	ai_weight = {
+		weight = 1
+	}
+}
+
+terraform_link = {
+	to = pc_city
+	from = pc_oasis
+
+	resources = {
+		category = terraforming
+
+		cost = {
+			energy = @gaiaCost
+		}
+	}
+
+	duration = @gaiaTime
+
+	potential = {
+		has_ascension_perk = "ap_arcology_project"
+	}
+
+	ai_weight = {
+		weight = 1
+	}
+}
+
+terraform_link = {
+	to = pc_city
+	from = pc_med
+
+	resources = {
+		category = terraforming
+
+		cost = {
+			energy = @gaiaCost
+		}
+	}
+
+	duration = @gaiaTime
+
+	potential = {
+		has_ascension_perk = "ap_arcology_project"
+	}
+
+	ai_weight = {
+		weight = 1
+	}
+}
+
+terraform_link = {
+	to = pc_city
+	from = pc_veld
+
+	resources = {
+		category = terraforming
+
+		cost = {
+			energy = @gaiaCost
+		}
+	}
+
+	duration = @gaiaTime
+
+	potential = {
+		has_ascension_perk = "ap_arcology_project"
+	}
+
+	ai_weight = {
+		weight = 1
+	}
+}
+
+terraform_link = {
+	to = pc_city
+	from = pc_antarctic
+
+	resources = {
+		category = terraforming
+
+		cost = {
+			energy = @gaiaCost
+		}
+	}
+
+	duration = @gaiaTime
+
+	potential = {
+		has_ascension_perk = "ap_arcology_project"
+	}
+
+	ai_weight = {
+		weight = 1
+	}
+}
+
+terraform_link = {
+	to = pc_city
+	from = pc_snow
+
+	resources = {
+		category = terraforming
+
+		cost = {
+			energy = @gaiaCost
+		}
+	}
+
+	duration = @gaiaTime
+
+	potential = {
+		has_ascension_perk = "ap_arcology_project"
+	}
+
+	ai_weight = {
+		weight = 1
+	}
+}
+
+terraform_link = {
+	to = pc_city
+	from = pc_mud
+
+	resources = {
+		category = terraforming
+
+		cost = {
+			energy = @gaiaCost
+		}
+	}
+
+	duration = @gaiaTime
+
+	potential = {
+		has_ascension_perk = "ap_arcology_project"
+	}
+
+	ai_weight = {
+		weight = 1
+	}
+}
+
+terraform_link = {
+	to = pc_city
+	from = pc_tepid
+
+	resources = {
+		category = terraforming
+
+		cost = {
+			energy = @gaiaCost
+		}
+	}
+
+	duration = @gaiaTime
+
+	potential = {
+		has_ascension_perk = "ap_arcology_project"
+	}
+
+	ai_weight = {
+		weight = 1
+	}
+}
+
+terraform_link = {
+	to = pc_city
+	from = pc_fog
+
+	resources = {
+		category = terraforming
+
+		cost = {
+			energy = @gaiaCost
+		}
+	}
+
+	duration = @gaiaTime
+
+	potential = {
+		has_ascension_perk = "ap_arcology_project"
+	}
+
+	ai_weight = {
+		weight = 1
+	}
+}
+
+terraform_link = {
+	to = pc_city
+	from = pc_cenote
+
+	resources = {
+		category = terraforming
+
+		cost = {
+			energy = @gaiaCost
+		}
+	}
+
+	duration = @gaiaTime
+
+	potential = {
+		has_ascension_perk = "ap_arcology_project"
+	}
+
+	ai_weight = {
+		weight = 1
+	}
+}
+
+terraform_link = {
+	to = pc_city
+	from = pc_coastal
+
+	resources = {
+		category = terraforming
+
+		cost = {
+			energy = @gaiaCost
+		}
+	}
+
+	duration = @gaiaTime
+
+	potential = {
+		has_ascension_perk = "ap_arcology_project"
+	}
+
+	ai_weight = {
+		weight = 1
+	}
+}
+
+terraform_link = {
+	to = pc_city
+	from = pc_badlands
+
+	resources = {
+		category = terraforming
+
+		cost = {
+			energy = @gaiaCost
+		}
+	}
+
+	duration = @gaiaTime
+
+	potential = {
+		has_ascension_perk = "ap_arcology_project"
+	}
+
+	ai_weight = {
+		weight = 1
+	}
+}
+
+terraform_link = {
+	to = pc_city
+	from = pc_semiarid
+
+	resources = {
+		category = terraforming
+
+		cost = {
+			energy = @gaiaCost
+		}
+	}
+
+	duration = @gaiaTime
+
+	potential = {
+		has_ascension_perk = "ap_arcology_project"
+	}
+
+	ai_weight = {
+		weight = 1
+	}
+}
+
+terraform_link = {
+	to = pc_city
+	from = pc_aeolian
+
+	resources = {
+		category = terraforming
+
+		cost = {
+			energy = @gaiaCost
+		}
+	}
+
+	duration = @gaiaTime
+
+	potential = {
+		has_ascension_perk = "ap_arcology_project"
+	}
+
+	ai_weight = {
+		weight = 1
+	}
+}
+
+terraform_link = {
+	to = pc_city
+	from = pc_duneforest
+
+	resources = {
+		category = terraforming
+
+		cost = {
+			energy = @gaiaCost
+		}
+	}
+
+	duration = @gaiaTime
+
+	potential = {
+		has_ascension_perk = "ap_arcology_project"
+	}
+
+	ai_weight = {
+		weight = 1
+	}
+}
+
+terraform_link = {
+	to = pc_city
+	from = pc_basalt
+
+	resources = {
+		category = terraforming
+
+		cost = {
+			energy = @gaiaCost
+		}
+	}
+
+	duration = @gaiaTime
+
+	potential = {
+		has_ascension_perk = "ap_arcology_project"
+	}
+
+	ai_weight = {
+		weight = 1
+	}
+}
+
+terraform_link = {
+	to = pc_city
+	from = pc_superhabitable
+
+	resources = {
+		category = terraforming
+
+		cost = {
+			energy = @gaiaCost
+		}
+	}
+
+	duration = @gaiaTime
+
+	potential = {
+		has_ascension_perk = "ap_arcology_project"
+	}
+
+	ai_weight = {
+		weight = 1
+	}
+}
+
+terraform_link = {
+	to = pc_city
+	from = pc_karst
+
+	resources = {
+		category = terraforming
+
+		cost = {
+			energy = @gaiaCost
+		}
+	}
+
+	duration = @gaiaTime
+
+	potential = {
+		has_ascension_perk = "ap_arcology_project"
+	}
+
+	ai_weight = {
+		weight = 1
+	}
+}
+
+terraform_link = {
+	to = pc_city
+	from = pc_geothermal
+
+	resources = {
+		category = terraforming
+
+		cost = {
+			energy = @gaiaCost
+		}
+	}
+
+	duration = @gaiaTime
+
+	potential = {
+		has_ascension_perk = "ap_arcology_project"
+	}
+
+	ai_weight = {
+		weight = 1
+	}
+}
+
+terraform_link = {
+	to = pc_city
+	from = pc_salt
+
+	resources = {
+		category = terraforming
+
+		cost = {
+			energy = @gaiaCost
+		}
+	}
+
+	duration = @gaiaTime
+
+	potential = {
+		has_ascension_perk = "ap_arcology_project"
+	}
+
+	ai_weight = {
+		weight = 1
+	}
+}
+
+terraform_link = {
+	to = pc_city
+	from = pc_coral
+
+	resources = {
+		category = terraforming
+
+		cost = {
+			energy = @gaiaCost
+		}
+	}
+
+	duration = @gaiaTime
+
+	potential = {
+		has_ascension_perk = "ap_arcology_project"
+	}
+
+	ai_weight = {
+		weight = 1
+	}
+}
+
+terraform_link = {			###
+	to = pc_city
+	from = pc_tidallylocked
+
+	resources = {
+		category = terraforming
+
+		cost = {
+			energy = @gaiaCost
+		}
+	}
+
+	duration = @gaiaTime
+
+	potential = {
+		has_ascension_perk = "ap_arcology_project"
+	}
+
+	ai_weight = {
+		weight = 1
+	}
+}
+
+terraform_link = {
+	to = pc_city
+	from = pc_storm
+
+	resources = {
+		category = terraforming
+
+		cost = {
+			energy = @gaiaCost
+		}
+	}
+
+	duration = @gaiaTime
+
+	potential = {
+		has_ascension_perk = "ap_arcology_project"
+	}
+
+	ai_weight = {
+		weight = 1
+	}
+}
+
+terraform_link = {
+	to = pc_city
+	from = pc_glacio
+
+	resources = {
+		category = terraforming
+
+		cost = {
+			energy = @gaiaCost
+		}
+	}
+
+	duration = @gaiaTime
+
+	potential = {
+		has_ascension_perk = "ap_arcology_project"
+	}
+
+	ai_weight = {
+		weight = 1
+	}
+}
+
+terraform_link = {
+	to = pc_city
+	from = pc_rogue
+
+	resources = {
+		category = terraforming
+
+		cost = {
+			energy = @gaiaCost
+		}
+	}
+
+	duration = @gaiaTime
+
+	potential = {
+		has_ascension_perk = "ap_arcology_project"
+	}
+
+	ai_weight = {
+		weight = 1
+	}
+}
+
+terraform_link = {
+	to = pc_city
+	from = pc_megaflora
+
+	resources = {
+		category = terraforming
+
+		cost = {
+			energy = @gaiaCost
+		}
+	}
+
+	duration = @gaiaTime
+
+	potential = {
+		has_ascension_perk = "ap_arcology_project"
+	}
+
+	ai_weight = {
+		weight = 1
+	}
+}
+
+terraform_link = {
+	to = pc_city
+	from = pc_reef
+
+	resources = {
+		category = terraforming
+
+		cost = {
+			energy = @gaiaCost
+		}
+	}
+
+	duration = @gaiaTime
+
+	potential = {
+		has_ascension_perk = "ap_arcology_project"
+	}
+
+	ai_weight = {
+		weight = 1
+	}
+}
+
+terraform_link = {
+	to = pc_city
+	from = pc_biolumen
+
+	resources = {
+		category = terraforming
+
+		cost = {
+			energy = @gaiaCost
+		}
+	}
+
+	duration = @gaiaTime
+
+	potential = {
+		has_ascension_perk = "ap_arcology_project"
+	}
+
+	ai_weight = {
+		weight = 1
+	}
+}
+
+terraform_link = {
+	to = pc_city
+	from = pc_aquifer
+
+	resources = {
+		category = terraforming
+
+		cost = {
+			energy = @gaiaCost
+		}
+	}
+
+	duration = @gaiaTime
+
+	potential = {
+		has_ascension_perk = "ap_arcology_project"
+	}
+
+	ai_weight = {
+		weight = 1
+	}
+}
+
+terraform_link = {
+	to = pc_city
+	from = pc_primal
+
+	resources = {
+		category = terraforming
+
+		cost = {
+			energy = @gaiaCost
+		}
+	}
+
+	duration = @gaiaTime
+
+	potential = {
+		has_ascension_perk = "ap_arcology_project"
+	}
+
+	ai_weight = {
+		weight = 1
+	}
+}
+
+terraform_link = {
+	to = pc_city
+	from = pc_supercon
+
+	resources = {
+		category = terraforming
+
+		cost = {
+			energy = @gaiaCost
+		}
+	}
+
+	duration = @gaiaTime
+
+	potential = {
+		has_ascension_perk = "ap_arcology_project"
+	}
+
+	ai_weight = {
+		weight = 1
+	}
+}
+
+terraform_link = {			###
+	to = pc_city
+	from = pc_eyevall
+
+	resources = {
+		category = terraforming
+
+		cost = {
+			energy = @gaiaCost
+		}
+	}
+
+	duration = @gaiaTime
+
+	potential = {
+		has_ascension_perk = "ap_arcology_project"
+	}
+
+	ai_weight = {
+		weight = 1
+	}
+}
+
+terraform_link = {
+	to = pc_city
+	from = pc_lanthanide
+
+	resources = {
+		category = terraforming
+
+		cost = {
+			energy = @gaiaCost
+		}
+	}
+
+	duration = @gaiaTime
+
+	potential = {
+		has_ascension_perk = "ap_arcology_project"
+	}
+
+	ai_weight = {
+		weight = 1
+	}
+}
+
+terraform_link = {
+	to = pc_city
+	from = pc_lichen
+
+	resources = {
+		category = terraforming
+
+		cost = {
+			energy = @gaiaCost
+		}
+	}
+
+	duration = @gaiaTime
+
+	potential = {
+		has_ascension_perk = "ap_arcology_project"
+	}
+
+	ai_weight = {
+		weight = 1
+	}
+}
+
+terraform_link = {
+	to = pc_city
+	from = pc_sulfur
+
+	resources = {
+		category = terraforming
+
+		cost = {
+			energy = @gaiaCost
+		}
+	}
+
+	duration = @gaiaTime
+
+	potential = {
+		has_ascension_perk = "ap_arcology_project"
+	}
+
+	ai_weight = {
+		weight = 1
+	}
+}
+
+terraform_link = {
+	to = pc_city
+	from = pc_ammonia
+
+	resources = {
+		category = terraforming
+
+		cost = {
+			energy = @gaiaCost
+		}
+	}
+
+	duration = @gaiaTime
+
+	potential = {
+		has_ascension_perk = "ap_arcology_project"
+	}
+
+	ai_weight = {
+		weight = 1
+	}
+}
+
+terraform_link = {
+	to = pc_city
+	from = pc_methane
+
+	resources = {
+		category = terraforming
+
+		cost = {
+			energy = @gaiaCost
+		}
+	}
+
+	duration = @gaiaTime
+
+	potential = {
+		has_ascension_perk = "ap_arcology_project"
+	}
+
+	ai_weight = {
+		weight = 1
+	}
+}
+
+terraform_link = {
+	to = pc_city
+	from = pc_irradiated
+
+	resources = {
+		category = terraforming
+
+		cost = {
+			energy = @gaiaCost
+		}
+	}
+
+	duration = @gaiaTime
+
+	potential = {
+		has_ascension_perk = "ap_arcology_project"
+	}
+
+	ai_weight = {
+		weight = 1
+	}
+}
+
+terraform_link = {
+	to = pc_city
+	from = pc_ash
+
+	resources = {
+		category = terraforming
+
+		cost = {
+			energy = @gaiaCost
+		}
+	}
+
+	duration = @gaiaTime
+
+	potential = {
+		has_ascension_perk = "ap_arcology_project"
+	}
+
+	ai_weight = {
+		weight = 1
+	}
+}
+
+terraform_link = {
+	to = pc_city
+	from = pc_acid
+
+	resources = {
+		category = terraforming
+
+		cost = {
+			energy = @gaiaCost
+		}
+	}
+
+	duration = @gaiaTime
+
+	potential = {
+		has_ascension_perk = "ap_arcology_project"
+	}
+
+	ai_weight = {
+		weight = 1
+	}
+}
+
+terraform_link = {
+	to = pc_city
+	from = pc_aquatic
+
+	resources = {
+		category = terraforming
+
+		cost = {
+			energy = @gaiaCost
+		}
+	}
+
+	duration = @gaiaTime
+
+	potential = {
+		has_ascension_perk = "ap_arcology_project"
+	}
+
+	ai_weight = {
+		weight = 1
+	}
+}
+
+
